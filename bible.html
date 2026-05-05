@@ -1,2 +1,18 @@
-< script src = " https://bibles.org/static/widget/v2/widget.js" ></script> <script> GLOBALBIBLE.init
-( { url : " https://bibles.org " , bible : " 555fef9a6cb31151-01 " , } ) ; </script>
+<style>
+  /* Widget içindeki tüm metinleri Livoie renk paletine (3d3935) zorlar */
+  #global-bible-widget, 
+  #global-bible-widget *, 
+  .gb-verse-text, 
+  .gb-reference {
+    color: #3d3935 !important;
+    font-family: 'Garamond', serif !important; /* Livoie estetiği için şık bir font */
+  }
+</style>
+
+<script src="https://bibles.org/static/widget/v2/widget.js"></script>
+<script>
+  GLOBALBIBLE.init({
+    url: "https://bibles.org",
+    bible: "555fef9a6cb31151-01"
+  });
+</script>
